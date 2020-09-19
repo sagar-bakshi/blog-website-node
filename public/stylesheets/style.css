@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100&display=swap');
+
+body {
+  font: 16px "Roboto", Helvetica, Arial, sans-serif;
+  background-color: #1a1c20;
+  color: #fff;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.brand{
+  margin: 0;
+  padding: 2px;
+  font-weight: 300;
+}
+
+.logo{
+  text-align: center;
+  margin: auto;
+  display: block;
+  margin: 0;
+}
+.container{
+  width: 1100px;
+  margin: auto;
+  padding: 10px;
+}
+.clr{
+  clear: both;
+}
+
+h1,h2,h3{
+  padding: 5px 0;
+  margin-bottom: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+
+}
+
+li{
+  padding: 5px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 100;
+  margin-right: 10px;
+}
+
+p{
+  margin: 0;
+}
+
+nav{
+  border: 2px solid #EDF4ED;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  overflow: auto;
+}
+
+nav a.current, nav a:hover{
+  color:#CFDB94 ;
+  border-bottom: 2px solid #CFDB94;
+}
+
+footer p{
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+}
+
+.post{
+  text-transform: uppercase;
+}
+
+.meta{
+  line-height: 2;
+  letter-spacing: .5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-weight: 100;
+  background-color: #1e5f74;
+  text-transform: lowercase;
+}
+
+a.more{
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #333;
+  color: #333333;
+
+}
+
+
+input, select, textarea{
+  margin-bottom:15px;
+}
+
+label{
+  display:inline-block;
+  width:180px;
+}
+
+input[type='text'], select, textarea{
+  padding:3px;
+  height:20px;
+  width:200px;
+  border:1px #ccc solid;
+}
+
+select{
+  height:28px;
+}
+
+textarea{
+  height:70px;
+  width:400px;
+}
+
+.blog-body{
+  margin-bottom: 10px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+ul.message li{
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #3c763d;
+  background-color: #d6e9c6;
+  width: 100%;
+  list-style: none;
+}
+.post img{
+  height: 400px;
+  width: auto;
+  margin: 5px auto;
+}
