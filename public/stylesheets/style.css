@@ -3,6 +3,8 @@
 body {
   font: 16px "Roboto", Helvetica, Arial, sans-serif;
   background-color: #1a1c20;
+  font-weight: 100;
+  line-height: 1.5;
   color: #fff;
 }
 a{
@@ -75,9 +77,6 @@ footer p{
   text-align: center;
 }
 
-.post{
-  text-transform: uppercase;
-}
 
 .meta{
   line-height: 2;
@@ -125,9 +124,6 @@ textarea{
 
 .blog-body{
   margin-bottom: 10px;
-  font-weight: 100;
-  letter-spacing: 1px;
-  line-height: 1.5;
 }
 
 ul.message li{
@@ -144,4 +140,18 @@ ul.message li{
   height: 400px;
   width: auto;
   margin: 5px auto;
+}
+
+.errors{
+  display: inline-block;
+}
+
+.comment-name{
+  font-size: 12px;
+  font-style: italic;
+}
+
+.comment-body{
+  font-weight: 200;
+  font-style: italic;
 }

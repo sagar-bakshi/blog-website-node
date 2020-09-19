@@ -6,22 +6,34 @@ const { check, validationResult } = require('express-validator');
 
 
 /* GET Form */
-router.get('/add',[
-    check('name').isEmpty().not().withMessage('Name is required')
-], function(req, res, next) {
+router.get('/add', function(req, res, next) {
     res.render('addcategory',{
         'title': 'Add Category'
     });
 });
 
-router.post('/add',function (req,res) {
+
+/* Show Categories */
+router.get('/show/:category', function(req, res, next) {
+    let posts = db.get('posts');
+
+    posts.find({category:req.params.category},{},function (err, posts) {
+        res.render('index',{
+           'title': req.params.category,
+           'posts': posts
+        });
+    });
+});
+
+
+router.post('/add',[
+    check('name').notEmpty().withMessage('Name is required')
+],function (req,res) {
 
     //getting the category name from input
     let name = req.body.name;
 
     let errors = validationResult(req);
-
-
 
     if (!errors.isEmpty()){
         return res.status(400).json({errors:errors.array()});
